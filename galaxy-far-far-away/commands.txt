@@ -1,0 +1,17 @@
+1 mkdir death_star 
+2 cd death_star
+3 touch darth_vader.txt, princess_leia.txt, storm_trooper.txt
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
