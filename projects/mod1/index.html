@@ -4,23 +4,113 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Gawi Bawi Bo</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
- <div id="gameDiv">
-   <h1 class="gameText" id="playerText"> Player: 
-   </h1>
-   <h1 class="gameText" id="computerText"> computer: 
-   </h1>
-   <h1 class="gameText" id="resultText"> result: 
-   </h1>
+  <div id="topBtns">
+  <button class="buttons" id="rules" onclick="showHideRules()">rules</button>
+  <!-- <button class="buttons" id="reset" onclick="gBB()">reset</button> -->
+  </div>
 
-   <button class="choiceBtn">rock</button>
-   <button class="choiceBtn">paper</button>
-   <button class="choiceBtn">scissors</button>
- </div>
+  <div id="rulesContent">
+    <ul>
+      <li>the same rules apply: scissors beats paper, rock beats scissors, paper beats rock</li>
+      <li>pronounced gawi bawi bo or kai bai bo, the order goes: gawi - scissors, bawi - rock, bo - paper</li>
+    </ul>
+  </div>
+
+  <div id="gameTitle">
+    <h1 class="title">Gawi Bawi Bo</h1>
+  </div> 
+    
+  <div id="display">
+    <div>
+      <h1 class="displayText" id="cpu">cpu</h1>
+    </div>
+    <div>
+      <h1 class="displayText" id="player">player</h1>
+    </div>
+    <div>
+      <h1 class="displayText" id="result">result</h1>
+    </div>
+  </div>
+<!--   
+  <div id="gBBbtns"> 
+      <button class="buttons" id="gawi">gawi - scissors</button>
+      <button class="buttons" id="bawi">bawi - rock</button>
+      <button class="buttons" id="bo">bo - paper</button>
+  </div>
+   -->
+<!--   <div id="hanaPpaegi">
+    <ul>
+      <li class="rules">
+        the second version we will play requires two choices!
+      </li>
+      <li class="rules">
+         gawi bawi bo, hanappaegi-il
+      </li>
+      <li class="rules">
+        this means scissors, rock, paper, subtract one
+      </li>
+      <li class="rules">
+        you will choose two attacks then choose one to "subtract" or not play as the attack
+      </li>
+      <li class="rules">
+        the same rules apply in determining the winner!
+      </li>
+      <li class="rules">
+        let's begin!
+      </li>
+    </ul>
+  </div> 
+  
+  <div id= "hPbtns">
+    <button class="gawi">gawi - scissors</button>
+    <button class="bawi">bawi - rock</button>
+    <button class="bo">bo - paper</button>
+    <button class="gawi">gawi - scissors</button>
+    <button class="bawi">bawi - rock</button>
+    <button class="bo">bo - paper</button>
+  </div>
+  
+  <div id="mookJjiPpa">
+    <ul>
+      <li class="rules">
+        the third version is mook-jji-ppa
+      </li>
+      <li class="rules">
+        begin by playing gawi bawi bo, the winner becomes the offense and the loser becomes the defense
+      </li>
+    
+    <div id="mJPbtns1">
+      <button class="gawi">gawi - scissors</button>
+      <button class="bawi">bawi - rock</button>
+      <button class="bo">bo - paper</button>
+    </div> 
+      
+      <li class="rules">
+        the offense will call out and play their attack
+      </li>
+      <li class="rules">
+        simultaneously the defense will play without calling it out, the defense must choose a different hand than the one the offense calls out and plays
+      </li>
+      <li class="rules">
+        the new offense is determined by rock beats scissors, scissors beats paper, paper beats rock
+      </li>
+      <li class="rules">
+        the game ends once the offense and the defense play the same move
+      </li>
+    </ul>
+    
+    <div id="mJPbtns2">
+      <button class="mook">mook - rock</button>
+      <button class="jji">jji - scissors</button>
+      <button class="ppa">ppa - paper</button>
+    </div> -->
+    
+<!--   </div> -->
   <script src="script.js"></script>
 </body>
 

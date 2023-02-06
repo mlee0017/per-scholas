@@ -1,25 +1,97 @@
+* {
+  background-color: black; 
+  font-family: courier; 
+  color: lightblue; 
+}
+
+/* default properties */ 
 html, body {
   height: 100%;
   width: 100%;
-  text-align: center;
 }
 
-.choiceBtn {
-  line-height: 40px;
-  width: 100px;
-  text-align: center;   font-family: cursive;
+ul {
+  list-style: none;
+  margin-bottom: 30px;
 }
 
-#gameDiv{
-  font-family: 'Brush Script MT', cursive;
-  border: 3px solid;
-  border-radius: 25px;
-  padding: 5px;
-  background-color: lightblue;
-  text-align: center;
+li {
+  margin-bottom: 10px; 
+  margin-top: 10px; 
 }
 
-#playerText{
-  color: whitesmoke;
+/*first div rules and reset buttons*/ 
+div#topBtns {
+  padding: 20px; 
+  position: absolute; 
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap;
+
+}
+/*second div ul and li inserted*/ 
+div#rulesContent {
+  padding: 20px; 
+  /* display: flex;
+  flex-direction: row;
+  justify-content: flex-end; */
+}
+
+/* title of gawi bawi bo displayed in center under top buttons rules reset */ 
+h1.title {
+  position: absolute; 
+  padding: 20px;
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
+}
+
+/* cpu player result display left side */
+div#display {
+  position: relative; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px; 
+  flex-wrap: wrap;
+  /*need space-around*/
+}
+/* 
+div#gawiBawiBo {
+  position: relative; 
+  display: block; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; 
+  flex-wrap: nowrap; 
+  margin-bottom: 20px;
+  padding-bottom: 20px; 
   
+} */
+
+/* div#gBBbtns  {
+  position: relative; 
+  display: flex; 
+  justify-content: space-around;
+  align-content: flex-end; 
+/*   align-content: inline-flex;  */
+/*   align-items: center;  */
+/*   flex-wrap: wrap; 
+  
+} */
+/* 
+div#gBBbtns.buttons#gawi {
+  background-image: url(/images/scissors.png); 
 }
+
+div#gBBbtns.buttons#bawi {
+  background-image: url(/images/rock.png); 
+}
+div#gBBbtns.buttons#bo {
+  background-image: url(/images/paper.png); 
+} */
+
+
+
+
+
