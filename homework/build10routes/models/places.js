@@ -61,4 +61,4 @@ const places = [
     }
 ]
 
-module.exports = places; 
+module.exports = places ; 

@@ -6,4 +6,6 @@ const placesController = require('../controllers/placesController')
 
 router.get('/', placesController.index)
 
-router.get('/', placesController.show)
+router.get('/:index', placesController.show)
+
+module.exports = router

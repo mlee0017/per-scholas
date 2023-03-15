@@ -8,8 +8,7 @@ function Show(props) {
             <p>City :  <strong>{props.place.city}</strong></p>
             
             <img src={props.places.image} alt={props.place.city}/> 
-            
-            
+    
             <a href={`/${index}`}>Back</a>
 
 
