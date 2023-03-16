@@ -11,7 +11,7 @@ let startingNum = 99;
 app.get("/", (req, res) => {
     res.send(`<h1> ${startingNum} 
     <del> problems but a bitch ain't one</del> 
-    bottles of better on the wall </h1>
+    bottles of beer on the wall </h1>
     <a href="${startingNum}"> take one down, pass it around
     </a>`
     )
