@@ -6,17 +6,13 @@ function Index(props) {
     <DefaultLayout>
       <div>
           <h1>Flight</h1>
-          <br />
-          <br />
           <a href="/flights/new">
             <button className="btn">Add...</button>
           </a>
-          <form action="/flights/clear?_method=DELETE" method="POST">
+          <form action="/flights/clear?_method=DELETE" method="DELETE">
             <button className="btn">CLEAR</button>
           </form>
-        </div>
-
-        <div>
+          
           {props && props.flights.map((flight, index) => (
             <div key={index}> 
                 <a href={`/flights/${flight._id}`}>
@@ -34,3 +30,5 @@ function Index(props) {
 }
 
 export default Index;
+
+//  I want to view a list of all flights (index view) that displays each flight's airline, flight no., and departure date/time

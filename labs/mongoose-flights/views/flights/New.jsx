@@ -19,14 +19,10 @@ function New({departsDate}) {
         <h1>Flights</h1>
         <br />
         <br />
-        <br />
 
         <form action="/flights" method="POST">
-          <div class="input-group">
-              <select
-                style={{ width: "30vw" }}
-                name="airline"
-              >
+          <div>
+              <select name="airline">
                 <option selected>Select an Airline: </option>
                 <option value="American">American</option>
                 <option value="Southwest">Southwest</option>
@@ -35,11 +31,8 @@ function New({departsDate}) {
            
           </div>
      
-          <div class="input-group">
-              <select
-                style={{ width: "30vw" }}
-                name="destination"
-              >
+          <div>
+              <select name="destination">
                 <option selected>Select a Destination: </option>
                 <option value="AUS">AUS</option>
                 <option value="DAL">DAL</option>
@@ -50,7 +43,7 @@ function New({departsDate}) {
            
           </div>
     
-          <div class="input-group">
+          <div>
               <input
                 type="datetime-local"
                 id="flight-time"
@@ -64,11 +57,10 @@ function New({departsDate}) {
        
           </div>
 
-          <div class="input-group">
+          <div>
            
               <input
                 id="flightNo"
-                style={{ width: "30vw" }}
                 name="flightNo"
                 value={flightNo}
               ></input>
@@ -76,20 +68,19 @@ function New({departsDate}) {
             
           </div>
 
-          <div class="input-group">
+          <div>
               <input
                 type="text"
                 id="departs"
                 name="departs"
                 value={`${departsDate.slice(0,10)} ${departsDate.slice(11,16)}`}
-                style={{ width: "30vw" }}
               ></input>
               <label for="departs">Departure: </label>
           </div>
          
           <br />
          
-            <button type="submit" class="btn btn-outline-primary">
+            <button type="submit">
               Submit
             </button>
         </form>
@@ -99,3 +90,5 @@ function New({departsDate}) {
 }
 
 export default New;
+
+//  I want to create flights by entering the information on a page (new view) that has a form and submitting it

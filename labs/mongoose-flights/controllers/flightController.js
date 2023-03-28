@@ -34,10 +34,11 @@ module.exports.new = (req, res) => {
     airport: req.body.airport,
   });
 
-  // obtain the default date
-  const defaultDate = newFlight.departs;
-  const departsDate = defaultDate.toISOString().slice(0, 16);
-  res.render("flights/New", { departsDate });
+  // Obtain the default date
+  const dt = newFlight.departs;
+  // Format the date for the value attribute of the input
+  const departsDate = dt.toISOString().slice(0, 16);
+  res.render('flights/new', {departsDate});
 };
 
 module.exports.create = async (req, res) => {
@@ -168,3 +169,4 @@ module.exports.updateDestination = async (req, res) => {
   })
   res.redirect(`/flights/${req.params.id}`)
 }
+

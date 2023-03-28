@@ -29,7 +29,8 @@ const flightSchema = new Schema(
     airport: { 
         type: String, 
         required: true, 
-        enum: ['AUS', 'DAL','LAX', 'SAN','SEA']}, 
+        enum: ['AUS', 'DAL','LAX', 'SAN','SEA'],
+        default: 'SAN'}, 
     destinations: [destinationSchema]
   },
   { timestamps: true }
@@ -43,3 +44,7 @@ const Destinations = mongoose.model('destinations', destinationSchema);
 
 
 module.exports = { Flights, Destinations }
+
+// airline	String	enum to include 'American', 'Southwest' & 'United'	n/a
+// flightNo	Number Required Between 10 and 9999	n/a
+// departs	Date n/a	One year from date created

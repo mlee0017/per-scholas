@@ -1,4 +1,4 @@
-mport React from "react";
+import React from "react";
 import DefaultLayout from "../layouts/DefaultLayout";
 
 function Show(props) {
@@ -54,19 +54,14 @@ function Show(props) {
         <br />
 
         <details>
-          <summary style={{ opacity: ".5" }}>Destinations:</summary>
+          <summary>Destinations:</summary>
           <form
             action={`/flights/${props.flight._id}/destinations`}
             method="POST"
           >
 
 
-                <select
-                  class="form-select"
-                  style={{ width: "30vw" }}
-                  name="airport"
-                  aria-label="Default select example"
-                >
+                <select name="airport">
                   <option selected>Select a Destination</option>
                   {availableAirports.map((airport) => (
                     <option value={airport}>{airport}</option>
@@ -79,7 +74,6 @@ function Show(props) {
                   id="arrival"
                   name="arrival"
                   value={currentDate}
-                
                 ></input>
 
                 <br />
@@ -97,7 +91,7 @@ function Show(props) {
          
           <form
             action={`/flights/${props.flight._id}?_method=DELETE`}
-            method="POST"
+            method="DELETE"
           >
             <button>Delete</button>
           </form>
