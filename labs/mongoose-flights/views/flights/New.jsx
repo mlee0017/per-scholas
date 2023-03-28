@@ -31,10 +31,6 @@ function New({departsDate}) {
                 <option value="American">American</option>
                 <option value="Southwest">Southwest</option>
                 <option value="United">United</option>
-                <option value="Frontier">Frontier</option>
-                <option value="Spirit">Spirit</option>
-                <option value="JetBlue">JetBlue</option>
-                <option value="Delta">Delta</option>
               </select>
            
           </div>
