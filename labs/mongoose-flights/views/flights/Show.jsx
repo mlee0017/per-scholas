@@ -3,6 +3,7 @@ import DefaultLayout from "../layouts/DefaultLayout";
 
 function Show(props) {
   console.log(props.flight.destinations);
+  let today = new Date(); 
 
   let currentDate = new Date(
     today.getFullYear(),

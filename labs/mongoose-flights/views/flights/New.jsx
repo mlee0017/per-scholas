@@ -2,11 +2,12 @@ import React from "react";
 import DefaultLayout from "../layouts/DefaultLayout";
 
 function New({departsDate}) {
+  let today = new Date(); 
   let currentDate = new Date(
     today.getFullYear(),
     today.getMonth(),
     today.getDate(),
-    today.getHours()-4,
+    today.getHours()-7,
     today.getMinutes(),
     today.getSeconds()
   );
@@ -32,7 +33,7 @@ function New({departsDate}) {
           </div>
      
           <div>
-              <select name="destination">
+              <select name="airport">
                 <option selected>Select a Destination: </option>
                 <option value="AUS">AUS</option>
                 <option value="DAL">DAL</option>
@@ -44,38 +45,38 @@ function New({departsDate}) {
           </div>
     
           <div>
+              <label for="flight-time">
+                Choose a date & time for your flight:
+              </label>
               <input
                 type="datetime-local"
                 id="flight-time"
                 name="flight-time"
                 value={currentDate.toISOString().slice(0, 16)}
               ></input>
-              <label for="flight-time">
-                Choose a date & time for your flight:
-              </label>
    
        
           </div>
 
           <div>
            
+            <label for="flightNo">Flight Number: </label>
               <input
                 id="flightNo"
                 name="flightNo"
                 value={flightNo}
               ></input>
-              <label for="flightNo">Flight Number: </label>
             
           </div>
 
           <div>
+            <label for="departure">Departure: </label>
               <input
                 type="text"
-                id="departs"
-                name="departs"
+                id="departure"
+                name="departure"
                 value={`${departsDate.slice(0,10)} ${departsDate.slice(11,16)}`}
               ></input>
-              <label for="departs">Departure: </label>
           </div>
          
           <br />
